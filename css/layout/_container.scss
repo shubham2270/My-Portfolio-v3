@@ -1,0 +1,20 @@
+body {
+   background-color: var(--bg-color);
+   transition: 0.4s ease-in-out;
+}
+
+.container {
+   margin: $container-mobile;
+    @include media($sm...) {
+       margin:  $container;
+    }
+    @include media($sm-L...) {
+       margin:  $container;
+    }
+    @include media($md...) {
+       margin:  $container;
+    }
+    @include media($lg...) {
+       margin:  $container;
+    }
+}

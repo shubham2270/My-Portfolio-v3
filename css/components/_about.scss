@@ -1,0 +1,160 @@
+.main_wrapper_about {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    // padding: 1.2em;
+
+    @include media('>767px') {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        height: 100vh;
+        grid-gap: 2rem;
+    }
+}
+
+.sub_wrapper_about {
+    display: grid;
+    align-items: center;
+    height: 100%;
+
+    span {
+        text-align: center;
+    }
+}
+
+.mypic {
+    @include card;
+    width: 65%;
+
+    @include media('>766px') {
+        width: 75%;
+    }
+}
+
+.myinfo {
+    font-family: $primary-font;
+    font-weight: bold;
+    padding: 0.8em 0 1em 0;
+    font-size: 1.5rem;
+    text-align: center;
+    // line-height: 23px;
+    color: var(--normal-text);
+
+    @include media($sm...) {
+        font-size: 1.2rem;
+        padding: 1.6em 0 0.4em 0;
+        // line-height: 2rem;
+    }
+
+    @include media($sm-L...) {
+        font-size: 1.3rem;
+        padding: 1.6em 0 0.4em 0;
+        // line-height: 2.2rem;
+    }
+
+    @include media($md...) {
+        font-size: 1.4rem;
+        padding: 1.6em 0 0.4em 0;
+        // line-height: 2.3rem;
+
+    }
+
+    @include media($lg...) {
+        font-size: 1.5rem;
+        padding: 1.6em 0 1em 0;
+        // line-height: 2.5rem;
+    }
+}
+
+.btn_resume {
+    @include button;
+    padding: 12px 28px;
+    font-size: 1.2rem;
+    background-color: white;
+    // margin-bottom: 2rem;
+    // background-color: red;
+
+    // @include media($sm...) {
+    //     padding: 12px;
+    //     font-size: 1rem;
+    // }
+
+    // @include media($sm-L...) {
+    //     padding: 14px;
+    //     font-size: 1.2rem;
+    // }
+
+    // @include media($md...) {
+    //     padding: 16px;
+    //     font-size: 1.3rem;
+    // }
+
+    // @include media($lg...) {
+    //     padding: 18px;
+    //     font-size: 1.4rem;
+    // }
+}
+
+.about_card {
+    @include card;
+    font-family: $primary-font;
+    color: white;
+    padding: 1.1em;
+    margin: 1.5em 0;
+
+    @include media($sm...) {
+        padding: 2em;
+    }
+
+    @include media($sm-L...) {
+        padding: 2.2em;
+    }
+
+    @include media($md...) {
+        padding: 2.4em;
+    }
+
+    @include media($lg...) {
+        padding: 2.6em;
+    }
+}
+
+.about_heading {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+
+    @include media($sm...) {
+        font-size: 1.5rem;
+    }
+
+    @include media($sm-L...) {
+        font-size: 1.8rem;
+    }
+
+    @include media($md...) {
+        font-size: 2rem;
+    }
+
+    @include media($lg...) {
+        font-size: 2.2rem;
+    }
+}
+
+.about_content {
+    font-size: 0.9rem;
+    line-height: 1.5em;
+
+    @include media($sm-L...) {
+        font-size: 1rem;
+    }
+
+    @include media($md...) {
+        font-size: 1.1rem;
+    }
+
+    @include media($lg...) {
+        font-size: 1.3rem;
+    }
+}

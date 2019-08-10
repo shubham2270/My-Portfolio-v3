@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono:700');
+
+@import './base/reset';
+@import './base/variables';
+@import './base/mixins';
+@import './base/keyframes';
+@import './base/includeMediaquery';
+
+@import './layout/container';
+@import './layout/nav';
+@import './layout/footer';
+
+@import './components/heroSection';
+@import './components/about';
+@import './components/skills';
+@import './components/works';
+@import './components/model';
+@import './components/backdrop';
+@import './components/graphicModal';

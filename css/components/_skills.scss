@@ -1,0 +1,99 @@
+.main_wrapper_skills {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    padding: 2em 0;
+    // background-color: red;
+
+    @include media('>767px') {
+        grid-template-columns: 1.5fr 1fr;
+        grid-column-gap: 3rem;
+        height: 100vh;
+    }
+}
+
+.skills_card {
+    @include card;
+    padding: 1em;
+    margin-bottom: 2em;
+
+    @include media($sm...) {
+        padding: 2.5em;
+    }
+    @include media($sm-L...) {
+        padding: 1.8em 2.6em;
+    }
+    @include media($md...) {
+        padding: 2.2em 2.9em;
+    }
+    @include media($lg...) {
+        padding: 2.5em 3em;
+    }
+}
+
+.skills_content {
+    display: grid;
+    align-content: center;
+    font-family: $primary-font;
+    font-weight: 500;
+    color: white;
+    list-style: none;
+    font-size: 0.8rem;
+    line-height: 2.2em;
+    height: 100%;
+    @include media($sm...) {
+        grid-template-columns: 1fr 1fr;
+        font-size: 0.9rem;
+    }
+    @include media($sm-L...) {
+        grid-template-columns: 1fr 1fr;
+        font-size: 0.95rem;
+    }
+    @include media($md...) {
+        grid-template-columns: 1fr 1fr;
+        font-size: 1rem;
+    }
+    @include media($lg...) {
+        grid-template-columns: 1fr 1fr;
+        font-size: 1.1rem;
+    }
+}
+
+
+.education_heading {
+  font-family: $primary-font;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  color: var(--normal-text);
+
+  @include media($md...) {
+    font-size: 1rem;
+}
+@include media($lg...) {
+    font-size: 1.3rem;
+
+}
+
+}
+
+.education_content {
+margin-top: 1rem;
+list-style-type: none;
+font-family: $primary-font;
+font-size: 0.9rem;
+line-height: 1.2rem;
+color: var(--normal-text);
+
+ 
+    li:nth-child(2n) {
+        margin-bottom: 1rem;
+    }
+
+    @include media($md...) {
+        font-size: 1rem;
+    }
+    @include media($lg...) {
+        font-size: 1.1rem;
+
+    }
+}

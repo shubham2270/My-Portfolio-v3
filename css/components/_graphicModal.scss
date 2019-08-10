@@ -1,0 +1,16 @@
+#graphic_model {
+    width: 700px;
+    height: auto;
+    overflow: hidden;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    animation: zoom ease-in-out 0.8s;
+
+    img {
+        height: auto;
+        width: 100%;
+        border-radius: 1.2rem;
+        background-color: red;
+    }
+}

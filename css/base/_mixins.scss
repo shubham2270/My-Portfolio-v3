@@ -1,0 +1,28 @@
+@mixin card {
+    background-color: $blue;
+    box-shadow: $orange -12px 12px 0px;
+    border-radius: 12px;
+    transition: 200ms ease-in-out;
+
+    &:hover {
+        box-shadow: $orange -2px 2px 0px;
+        transform: translateX(-2px) translateY(2px);
+    }
+
+}
+
+@mixin button {
+    border-radius: 25em;
+    border: $orange 2px solid;
+    color: $black;
+    text-transform: uppercase;
+    font-family: $primary-font;
+    font-weight: 500;
+    transition: ease-in-out 300ms;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $blue;
+        color: white;
+    }
+}

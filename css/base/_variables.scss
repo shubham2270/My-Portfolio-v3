@@ -1,0 +1,38 @@
+//font family
+$primary-font: 'Montserrat', sans-serif;
+$fira: 'Fira Mono', monospace, bold;
+$shadow: #E5E5E5 0 0 25px;
+
+
+//colors for Light theme
+html {
+    --normal-text: #303030;
+    --bg-color: #fff;
+    --nav: #fff;
+    --myname: #303C6C;
+}
+
+//colors for dark theme
+html[data-theme="dark"] {
+    --normal-text: #fff;
+    --bg-color: #303030;
+    --nav: #505050;
+    --myname: #F4976C;
+}
+
+$orange: #F4976C;
+$blue: #303C6C;
+$black: #303030;
+$white: #FFFFFF;
+
+
+$container: auto 10%;
+$container-mobile: auto 6%;
+
+//Media query breakPoints
+$xs: '<=480px'; //Mobile
+$xs-L: '>481px','<=767px', 'landscape'; //Low Resolution tablet / landscape 
+$sm: '>768px', '<=1024px'; //tablet
+$sm-L: '>768px', '<=1024px', 'landscape'; //tablet - landscape
+$md: '>1025px', '<=1280px'; //laptop / desktop
+$lg: '>1280px'; // extra large screens
